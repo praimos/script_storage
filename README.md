@@ -12,4 +12,4 @@ bash <(curl -fsSL https://raw.githubusercontent.com/praimos/script_storage/refs/
 
 ## Папка Scripts
 
-Хранит в себе скрипты используемаы для упращения работы с сервисами.
+Хранит в себе скрипты используемые для упрощения работы с сервисами.
