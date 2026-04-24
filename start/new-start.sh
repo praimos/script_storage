@@ -42,7 +42,7 @@ cat << EOF
 ║           :: : :      :      :   : :   :   : :     :     ║
 ║                                                          ║
 ║  Script: installing basic tools                          ║
-║  Version: 1.0.1                                          ║
+║  Version: 1.1.1                                          ║
 ║  Author:  Stg. Katsu                                     ║
 ║  Started: $(date +"%H:%M:%S on %Y-%m-%d")                ║
 ╚══════════════════════════════════════════════════════════╝
@@ -86,7 +86,10 @@ log "Обновление пакетов"
 apt update && apt upgrade -y
 
 log "Установка частоиспольуемых инструментов"
-apt install wget curl net-tools git whois nano btop bind9-utils -y
+apt install wget curl net-tools git whois nano btop bind9-utils fish -y
+
+log "Установка окружения FISH"
+chsh -s /usr/bin/fish
 
 log "Создание нового пользователя с правами sudo"
 read -r -p 'Введите имя нового пользователя > ' USERNAME
