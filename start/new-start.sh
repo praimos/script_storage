@@ -42,7 +42,7 @@ cat << EOF
 ║           :: : :      :      :   : :   :   : :     :     ║
 ║                                                          ║
 ║  Script: installing basic tools                          ║
-║  Version: 1.1.1                                          ║
+║  Version: 1.1.2                                          ║
 ║  Author:  Stg. Katsu                                     ║
 ║  Started: $(date +"%H:%M:%S on %Y-%m-%d")                ║
 ╚══════════════════════════════════════════════════════════╝
@@ -93,7 +93,7 @@ chsh -s /usr/bin/fish
 
 log "Создание нового пользователя с правами sudo"
 read -r -p 'Введите имя нового пользователя > ' USERNAME
-adduser $USERNAME
+adduser --shell /usr/bin/fish $USERNAME
 usermod -aG sudo $USERNAME
 
 
