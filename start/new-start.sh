@@ -43,7 +43,7 @@ cat << EOF
 ║                                                          ║
 ║  Script: installing basic tools                          ║
 ║  Version: 1.1.2                                          ║
-║  Author:  Stg. Katsu                                     ║
+║  Author:  Sgt. Katsu                                     ║
 ║  Started: $(date +"%H:%M:%S on %Y-%m-%d")                ║
 ╚══════════════════════════════════════════════════════════╝
 EOF
